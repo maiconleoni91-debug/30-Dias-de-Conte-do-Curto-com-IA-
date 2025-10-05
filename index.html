@@ -35,8 +35,10 @@
     .callout__inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
     .footer{border-top:1px solid #e5e7eb;padding:20px 0}
     .footer__inner{display:flex;align-items:center;justify-content:space-between}
-    .btn{display:inline-block;text-decoration:none;border:1px solid var(--brand);color:#fff;background:var(--brand);padding:12px 18px;border-radius:10px;font-weight:600}
+    .btn{display:inline-block;text-decoration:none;border:1px solid var(--brand);color:#fff;background:var(--brand);padding:12px 18px;border-radius:10px;font-weight:600;transition:all .2s}
+    .btn:hover{background:var(--accent);border-color:var(--accent)}
     .btn--ghost{background:transparent;color:var(--brand)}
+    .btn--ghost:hover{background:var(--brand);color:#fff}
     .btn--sm{padding:8px 12px} .btn--xl{font-size:18px;padding:16px 24px;border-radius:12px}
     @media (max-width:900px){ .hero__grid{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr} .bullets{columns:1} .callout__inner{flex-direction:column;align-items:flex-start} }
   </style>
@@ -72,8 +74,8 @@
           <span>30 min/dia</span>
         </div>
       </div>
-      <div>
-        < img  src = "assets/capa-curso.png"  alt = "Capa do eBook 30 Dias de Conteúdo Curto com IA"  class = "hero__img" >
+      <div class="hero__image">
+        <img src="assets/logo.png" alt="30 Dias de Conteúdo Curto com IA (sem aparecer)" class="hero__img">
       </div>
     </div>
   </section>
